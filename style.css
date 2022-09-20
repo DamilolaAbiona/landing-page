@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+/* Start here */
+.main {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: url(./images/bg.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+  animation: text-changer 10s infinite;
+}
+@keyframes text-changer {
+    0% {
+     
+        background-color: hwb(0 4% 95% / 0.4);
+    }
+     25% {
+        
+        background-color:rgba(4, 3, 57, 0.4) ;
+    }
+     50% {
+       
+        background-color:  rgba(82, 3, 1, 0.6);
+    }
+     75% {
+      
+        background-color:rgba(99, 46, 3, 0.4) ;
+        
+    }
+     100% {
+       
+        background-color: rgba(0, 0, 0, 0.4) ;
+    }
+    
+}
+
+.custom-body {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.custom-body > h1 {
+  font-size: 9rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+.content {
+  width: 66%;
+}
+.content > h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.content > p {
+  font-weight: 300;
+}
+.box-items {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.box {
+  margin-right: 2rem;
+  text-transform: uppercase;
+}
+.box > div {
+  padding: 1rem 1.8rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  background: rgba(205, 195, 195, 0.2);
+}
+.box > p {
+  /* background-image: linear-gradient(
+    to right top,
+    #e32511,
+    #e73f0c,
+    #ea5209,
+    #ed6307,
+    #ef730a
+  );
+  background-image: linear-gradient(
+    to right top,
+    #c10808,
+    #cc1807,
+    #d62305,
+    #e12d03,
+    #eb3700
+  );
+  background-image: linear-gradient(
+    to right top,
+    #c10808,
+    #a80808,
+    #900707,
+    #780704,
+    #610600
+  ); */
+  background:
+  #ec710d;
+  padding: 0.3rem;
+}
+form > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+input {
+  background: transparent;
+  border: 1px 4px 1px 4px solid #ec710d;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+}
+button {
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  /* background-image: linear-gradient(
+    to right top,
+    #e32511,
+    #e13b0a,
+    #df4b04,
+    #610600,
+    #db6400
+  ); */
+  background: 
+   #ec450d;
+  
+ 
+   /* background-image: linear-gradient(
+    to right top,
+    #c10808,
+    #cc1807,
+    #d62305,
+    #e12d03,
+    #eb3700
+  ); */
+  border: 1px solid transparent;
+
+  border-radius: 3px 3px 3px 0px;
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+button:hover {
+  font-size: 1rem;
+  font-family: nunito;
+}
+
+/* media Query */
+@media screen and (max-width:600px){
+  .custom-body {
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.custom-body > h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+.content {
+  width: 100%;
+}
+.content > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.content > p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.box-items {
+  margin-left: 2.5rem;
+}
+}
