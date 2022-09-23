@@ -236,7 +236,7 @@ form > input{
 
 }
 .box > div {
-  width:4rem;
+  width:7rem;
   /* padding-right: .3rem; */
   padding: 1rem .1rem;
   margin-top: 2rem;
@@ -246,7 +246,7 @@ form > input{
   background: rgba(205, 195, 195, 0.2);
 }
 .box > p {
-  font-size: .7rem;
+  font-size: 1rem;
   background:
   #ec710d;
   /* padding: 0.1rem; */
