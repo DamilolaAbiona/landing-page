@@ -133,30 +133,7 @@ img {
   background: rgba(205, 195, 195, 0.2);
 }
 .box > p {
-  /* background-image: linear-gradient(
-    to right top,
-    #e32511,
-    #e73f0c,
-    #ea5209,
-    #ed6307,
-    #ef730a
-  );
-  background-image: linear-gradient(
-    to right top,
-    #c10808,
-    #cc1807,
-    #d62305,
-    #e12d03,
-    #eb3700
-  );
-  background-image: linear-gradient(
-    to right top,
-    #c10808,
-    #a80808,
-    #900707,
-    #780704,
-    #610600
-  ); */
+  
   background:
   #ec710d;
   padding: 0.3rem;
@@ -189,15 +166,7 @@ button {
   background: 
    #ec450d;
   
- 
-   /* background-image: linear-gradient(
-    to right top,
-    #c10808,
-    #cc1807,
-    #d62305,
-    #e12d03,
-    #eb3700
-  ); */
+
   border: 1px solid transparent;
 
   border-radius: 3px 3px 3px 0px;
@@ -211,8 +180,15 @@ button:hover {
 }
 
 /* media Query */
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px){
+ 
+  .container{
+   width: ;
+  }
+ 
+
   .custom-body {
+    width: 100%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -239,8 +215,39 @@ button:hover {
   font-size: 1.2rem;
   font-weight: 300;
 }
+form{
+  flex-wrap: wrap;
+}
+form > input{
+  width: 70%;
+  margin-bottom: 1rem;
+}
 
 .box-items {
-  margin-left: 2.5rem;
+  margin-left: 1rem;
+  
+
+
+  
 }
+.box {
+  margin-right: 1rem;
+  text-transform: uppercase;
+
+}
+.box > div {
+  padding: 0rem .2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: 800;
+  background: rgba(205, 195, 195, 0.2);
+}
+.box > p {
+  font-size: 1rem;
+  background:
+  #ec710d;
+  padding: 0.1rem;
+}
+
 }
