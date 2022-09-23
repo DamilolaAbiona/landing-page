@@ -236,18 +236,20 @@ form > input{
 
 }
 .box > div {
-  padding: 0rem .2rem;
+  width:4rem;
+  /* padding-right: .3rem; */
+  padding: 1rem .1rem;
   margin-top: 2rem;
   text-transform: uppercase;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 800;
   background: rgba(205, 195, 195, 0.2);
 }
 .box > p {
-  font-size: 1rem;
+  font-size: .7rem;
   background:
   #ec710d;
-  padding: 0.1rem;
+  /* padding: 0.1rem; */
 }
 
 }
